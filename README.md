@@ -39,9 +39,9 @@ Model: ```google/flan-t5-base```
 
 * Send API requests to http://localhost/summarize for direct backend access.
 
-# Usage:
+# Usage
 
-### Frontend:
+### Frontend
 
 * Enter the input text in any language.
 * Choose the output language from the dropdown list.
