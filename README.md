@@ -50,7 +50,7 @@ Model: ```google/flan-t5-base```
 * View the generated cross-lingual summary below the input form.
 * Use Clear to reset the form.
 
-## API:
+## API
 
 * Endpoint: POST /summarize
 
