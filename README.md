@@ -1,4 +1,4 @@
-# Cross-Lingual Text Summarization Application:
+# Cross-Lingual Text Summarization 
 This project provides a cross-lingual text summarization system that leverages a pre-trained model from the Hugging Face Model Hub to condense text written in any language and produce a summary in a selected target language. It includes a FastAPI backend, a React-based frontend, and an NGINX server to manage multiple simultaneous requests. The entire application is containerized with Docker and orchestrated using Docker Compose.
 
 # Why This Model?:
