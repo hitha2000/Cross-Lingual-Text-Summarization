@@ -1,7 +1,7 @@
 # Cross-Lingual Text Summarization 
 This project provides a cross-lingual text summarization system that leverages a pre-trained model from the Hugging Face Model Hub to condense text written in any language and produce a summary in a selected target language. It includes a FastAPI backend, a React-based frontend, and an NGINX server to manage multiple simultaneous requests. The entire application is containerized with Docker and orchestrated using Docker Compose.
 
-# Why This Model?:
+# Why This Model?
 
 Model: ```google/flan-t5-base```
 
@@ -15,7 +15,7 @@ Model: ```google/flan-t5-base```
 
 * Motivation: In a multilingual world, users often face long texts in unfamiliar languages. This system delivers concise summaries in the user’s chosen language, bridging gaps in comprehension and saving valuable time.
 
-# Prerequisites:
+# Prerequisites
 
 * Docker and Docker Compose installed
 
@@ -26,36 +26,31 @@ Model: ```google/flan-t5-base```
 * ```google/flan-t5-base``` model, downloaded through a dedicated notebook in ```./backend/app/model-downloading.ipynb```.  The model is not included in the repository due to its large size (~1GB) and must be downloaded separately before running the application.
 
 
-# Setup Instructions:
-Build and Run with Docker Compose: ```docker-compose up --build```
+# Setup Instructions
+* Build and Run with Docker Compose: ```docker-compose up --build```
 
-Nginx is configured on port 80 as follows:
-- Serves React static files from /usr/share/nginx/html.
-- Internally forwards API requests (/api) to the backend service running on port 8000.
+* Nginx is configured on port 80 as follows:
+    - Serves React static files from /usr/share/nginx/html.
+    - Internally forwards API requests (/api) to the backend service running on port 8000.
 
-# Access the Application:
+# Access the Application
 
-Open http://localhost in a browser to use the React frontend.
+* Open http://localhost in a browser to use the React frontend.
 
-Send API requests to http://localhost/summarize for direct backend access.
+* Send API requests to http://localhost/summarize for direct backend access.
 
 # Usage:
 
 ### Frontend:
 
 * Enter the input text in any language.
-
 * Choose the output language from the dropdown list.
-
 * Set the desired summary length (default: 100 words).
-
 * Click Summarize or press Enter.
-
 * View the generated cross-lingual summary below the input form.
-
 * Use Clear to reset the form.
 
-API:
+## API:
 
 * Endpoint: POST /summarize
 
